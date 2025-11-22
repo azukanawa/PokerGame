@@ -73,8 +73,8 @@ void sort_cards(int player_cards[][CARDS_NUM], int players_num) // 理牌函数
 
 int who_wins(int player_cards[][CARDS_NUM], int player_num, int players_winning_status[])
 {
-    int index = 0; // 索引一号
-    int index1 = 0;
+    int index = 0;                     // 索引一号
+    int index1 = 0;                    // 索引二号
     int suits[player_num][CARDS_NUM];  // 花色数组
     int points[player_num][CARDS_NUM]; // 点数数组
 
@@ -153,30 +153,17 @@ int who_wins(int player_cards[][CARDS_NUM], int player_num, int players_winning_
         }
     }
 
-    for (int i = 0; i < player_num; i++)
-    {
-        printf("Player %2d:", i + 1);
+    int max = 0;        // 记录最大的特征值
+    int max_player = 0; // 记录有最大特征值的玩家是哪位
 
-        for (int j = 0; j < CARDS_NUM; j++)
+    for (max = players_winning_status[0], max_player = 0, index = 0; index < player_num; index++) // 遍历数组找到最大的状态值以及对应的玩家
+    {
+        if (players_winning_status[index] > max)
         {
-            printf("%d ", suits[i][j]);
+            max = players_winning_status[index];
+            max_player = index;
         }
-
-        printf("\n");
     }
-    for (int i = 0; i < player_num; i++)
-    {
-        printf("Player %2d:", i + 1);
 
-        for (int j = 0; j < CARDS_NUM; j++)
-        {
-            printf("%d ", points[i][j]);
-        }
-
-        printf("\n");
-    }
-    for (int i = 0; i < player_num; i++)
-    {
-        printf("%d ", players_winning_status[i]);
-    }
+    return max_player + 1; // 由于从0开始遍历，所以返回值加一
 }
