@@ -3,6 +3,7 @@
     "stdio.h": "c",
     "io.h": "c",
     "init.h": "c",
-    "function.h": "c"
+    "function.h": "c",
+    "stdlib.h": "c"
   }
 }

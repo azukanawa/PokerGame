@@ -2,8 +2,8 @@
 
 #define FALSE 0
 #define TRUE 1
-#define CARDS_NUM 5 // 每个玩家手牌数
-#define CARDS_TOTAL 52
+#define CARDS_NUM 5    // 每个玩家手牌数
+#define CARDS_TOTAL 52 // 总牌数
 
 int client_escape_or_not(void) // 用户是否继续游戏
 {
