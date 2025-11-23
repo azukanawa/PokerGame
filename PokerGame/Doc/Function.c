@@ -99,56 +99,101 @@ int who_wins(int player_cards[][CARDS_NUM], int player_num, int players_winning_
             if (suits[index][CARDS_NUM - 1] == suits[index][0])
             {
                 /*是就是同花顺*/
-                /*用一个四位数来表示玩家特征，千位是牌型，百位和十位是最大的点数，个位是最大牌的花色*/
-                players_winning_status[index] = FLUSH * 1000 + points[index][CARDS_NUM - 1] * 10 + player_cards[index][CARDS_NUM - 1] % 10;
+                /*用一个四位数来表示玩家特征，最高位是牌型，往下两位是核心牌的点数，个位是最大牌的花色*/
+                players_winning_status[index] = FLUSH * 1000 + player_cards[index][CARDS_NUM - 1];
                 continue;
             }
             else
             {
                 /*否则就是顺子*/
-                players_winning_status[index] = STRAIGHT * 1000 + points[index][CARDS_NUM - 1] * 10 + player_cards[index][CARDS_NUM - 1] % 10;
+                players_winning_status[index] = STRAIGHT * 1000 + player_cards[index][CARDS_NUM - 1];
                 continue;
             }
         }
 
         /*判断是否是炸弹*/
-        else if (points[index][0] == points[index][3] || points[index][1] == points[index][4])
+        else if (points[index][0] == points[index][3])
         {
-            players_winning_status[index] = FOUR * 1000 + points[index][CARDS_NUM - 1] * 10 + player_cards[index][CARDS_NUM - 1] % 10;
+            players_winning_status[index] = FOUR * 1000 + player_cards[index][3];
+            continue;
+        }
+        else if (points[index][1] == points[index][4])
+        {
+            players_winning_status[index] = FOUR * 1000 + player_cards[index][4];
             continue;
         }
 
         /*判断是否是三带二*/
-        else if (points[index][0] == points[index][2] && points[index][3] == points[index][4] || points[index][2] == points[index][4] && points[index][0] == points[index][1])
+        else if (points[index][0] == points[index][2] && points[index][3] == points[index][4])
         {
-            players_winning_status[index] = FULL_HOUSE * 1000 + points[index][CARDS_NUM - 1] * 10 + player_cards[index][CARDS_NUM - 1] % 10;
+            players_winning_status[index] = FULL_HOUSE * 1000 + player_cards[index][2];
+            continue;
+        }
+        else if (points[index][2] == points[index][4] && points[index][0] == points[index][1])
+        {
+            players_winning_status[index] = FULL_HOUSE * 1000 + player_cards[index][4];
             continue;
         }
 
         /*判断是否是三张*/
-        else if (points[index][0] == points[index][2] || points[index][2] == points[index][4] || points[index][1] == points[index][3])
+        else if (points[index][0] == points[index][2])
         {
-            players_winning_status[index] = THREE * 1000 + points[index][CARDS_NUM - 1] * 10 + player_cards[index][CARDS_NUM - 1] % 10;
+            players_winning_status[index] = THREE * 1000 + player_cards[index][2];
+            continue;
+        }
+        else if (points[index][2] == points[index][4])
+        {
+            players_winning_status[index] = THREE * 1000 + player_cards[index][4];
+            continue;
+        }
+        else if (points[index][1] == points[index][3])
+        {
+            players_winning_status[index] = THREE * 1000 + player_cards[index][3];
             continue;
         }
 
         /*判断是否是两对*/
-        else if (points[index][0] == points[index][1] && points[index][2] == points[index][3] || points[index][0] == points[index][1] && points[index][3] == points[index][4] || points[index][1] == points[index][2] && points[index][3] == points[index][4])
+        else if (points[index][0] == points[index][1] && points[index][2] == points[index][3])
         {
-            players_winning_status[index] = TWO_PAIRS * 1000 + points[index][CARDS_NUM - 1] * 10 + player_cards[index][CARDS_NUM - 1] % 10;
+            players_winning_status[index] = TWO_PAIRS * 1000 + player_cards[index][3];
+            continue;
+        }
+        else if (points[index][0] == points[index][1] && points[index][3] == points[index][4])
+        {
+            players_winning_status[index] = TWO_PAIRS * 1000 + player_cards[index][4];
+            continue;
+        }
+        else if (points[index][1] == points[index][2] && points[index][3] == points[index][4])
+        {
+            players_winning_status[index] = TWO_PAIRS * 1000 + player_cards[index][4];
             continue;
         }
 
         /*判断是否是对子*/
-        else if (points[index][0] == points[index][1] || points[index][1] == points[index][2] || points[index][2] == points[index][3] || points[index][3] == points[index][4])
+        else if (points[index][0] == points[index][1])
         {
-            players_winning_status[index] = PAIR * 1000 + points[index][CARDS_NUM - 1] * 10 + player_cards[index][CARDS_NUM - 1] % 10;
+            players_winning_status[index] = PAIR * 1000 + player_cards[index][1];
+            continue;
+        }
+        else if (points[index][1] == points[index][2])
+        {
+            players_winning_status[index] = PAIR * 1000 + player_cards[index][2];
+            continue;
+        }
+        else if (points[index][2] == points[index][3])
+        {
+            players_winning_status[index] = PAIR * 1000 + player_cards[index][3];
+            continue;
+        }
+        else if (points[index][3] == points[index][4])
+        {
+            players_winning_status[index] = PAIR * 1000 + player_cards[index][4];
             continue;
         }
 
         else
         {
-            players_winning_status[index] = NONE * 1000 + points[index][CARDS_NUM - 1] * 10 + player_cards[index][CARDS_NUM - 1] % 10;
+            players_winning_status[index] = NONE * 1000 + player_cards[index][CARDS_NUM - 1];
             continue;
         }
     }

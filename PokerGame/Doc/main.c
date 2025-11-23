@@ -64,32 +64,48 @@ int main()
 
         for (int i = 0; i < players_num; i++)
         {
-            printf("Player %2d:", i + 1);
+            printf("Player%2d:", i + 1);
 
             for (int j = 0; j < CARDS_NUM; j++)
             {
                 if (players_cards[i][j] % 10 == SPADE)
                 {
-                    printf("梅花");
+                    printf("♠");
                 }
                 else if (players_cards[i][j] % 10 == HEART)
                 {
-                    printf("红心");
+                    printf("♥");
                 }
                 else if (players_cards[i][j] % 10 == CLUB)
                 {
-                    printf("梅花");
+                    printf("♣");
                 }
                 else
                 {
-                    printf("方片");
+                    printf("♦");
                 }
-                printf("%d ", players_cards[i][j] / 10);
+
+                if (players_cards[i][j] / 10 == 11)
+                {
+                    printf("J ");
+                }
+                else if (players_cards[i][j] / 10 == 12)
+                {
+                    printf("Q ");
+                }
+                else if (players_cards[i][j] / 10 == 13)
+                {
+                    printf("K ");
+                }
+                else
+                {
+                    printf("%d ", players_cards[i][j] / 10);
+                }
             }
             printf("\n");
         }
 
-        printf("Player%d wins!\n", who_wins(players_cards, players_num, players_winning_status)); // 找到谁赢了
+        printf("Player%2d wins!\n", who_wins(players_cards, players_num, players_winning_status)); // 找到谁赢了
     }
 
     return 0;
