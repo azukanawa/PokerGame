@@ -1,0 +1,38 @@
+[
+{
+  "directory": "D:/PokerGameRepository/PokerGame/build/Doc",
+  "command": "D:\\PokerGameRepository\\PokerGame\\mingw64\\bin\\g++.exe  @CMakeFiles/PokerGame.dir/includes_CXX.rsp -g -o CMakeFiles\\PokerGame.dir\\Button.cpp.obj -c D:\\PokerGameRepository\\PokerGame\\Doc\\Button.cpp",
+  "file": "D:/PokerGameRepository/PokerGame/Doc/Button.cpp",
+  "output": "Doc/CMakeFiles/PokerGame.dir/Button.cpp.obj"
+},
+{
+  "directory": "D:/PokerGameRepository/PokerGame/build/Doc",
+  "command": "D:\\PokerGameRepository\\PokerGame\\mingw64\\bin\\g++.exe  @CMakeFiles/PokerGame.dir/includes_CXX.rsp -g -o CMakeFiles\\PokerGame.dir\\Function.cpp.obj -c D:\\PokerGameRepository\\PokerGame\\Doc\\Function.cpp",
+  "file": "D:/PokerGameRepository/PokerGame/Doc/Function.cpp",
+  "output": "Doc/CMakeFiles/PokerGame.dir/Function.cpp.obj"
+},
+{
+  "directory": "D:/PokerGameRepository/PokerGame/build/Doc",
+  "command": "D:\\PokerGameRepository\\PokerGame\\mingw64\\bin\\g++.exe  @CMakeFiles/PokerGame.dir/includes_CXX.rsp -g -o CMakeFiles\\PokerGame.dir\\Game.cpp.obj -c D:\\PokerGameRepository\\PokerGame\\Doc\\Game.cpp",
+  "file": "D:/PokerGameRepository/PokerGame/Doc/Game.cpp",
+  "output": "Doc/CMakeFiles/PokerGame.dir/Game.cpp.obj"
+},
+{
+  "directory": "D:/PokerGameRepository/PokerGame/build/Doc",
+  "command": "D:\\PokerGameRepository\\PokerGame\\mingw64\\bin\\g++.exe  @CMakeFiles/PokerGame.dir/includes_CXX.rsp -g -o CMakeFiles\\PokerGame.dir\\Init.cpp.obj -c D:\\PokerGameRepository\\PokerGame\\Doc\\Init.cpp",
+  "file": "D:/PokerGameRepository/PokerGame/Doc/Init.cpp",
+  "output": "Doc/CMakeFiles/PokerGame.dir/Init.cpp.obj"
+},
+{
+  "directory": "D:/PokerGameRepository/PokerGame/build/Doc",
+  "command": "D:\\PokerGameRepository\\PokerGame\\mingw64\\bin\\g++.exe  @CMakeFiles/PokerGame.dir/includes_CXX.rsp -g -o CMakeFiles\\PokerGame.dir\\main.cpp.obj -c D:\\PokerGameRepository\\PokerGame\\Doc\\main.cpp",
+  "file": "D:/PokerGameRepository/PokerGame/Doc/main.cpp",
+  "output": "Doc/CMakeFiles/PokerGame.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/PokerGameRepository/PokerGame/build/Doc",
+  "command": "D:\\PokerGameRepository\\PokerGame\\mingw64\\bin\\g++.exe  @CMakeFiles/PokerGame.dir/includes_CXX.rsp -g -o CMakeFiles\\PokerGame.dir\\Music.cpp.obj -c D:\\PokerGameRepository\\PokerGame\\Doc\\Music.cpp",
+  "file": "D:/PokerGameRepository/PokerGame/Doc/Music.cpp",
+  "output": "Doc/CMakeFiles/PokerGame.dir/Music.cpp.obj"
+}
+]

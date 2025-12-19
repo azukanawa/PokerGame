@@ -1,0 +1,28 @@
+Doc/CMakeFiles/PokerGame.dir/Function.cpp.obj: \
+ D:\PokerGameRepository\PokerGame\Doc\Function.cpp \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ D:/PokerGameRepository/PokerGame/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
+ D:/PokerGameRepository/PokerGame/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+ D:/PokerGameRepository/PokerGame/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+ D:/PokerGameRepository/PokerGame/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+ D:/PokerGameRepository/PokerGame/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+ D:/PokerGameRepository/PokerGame/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ D:/PokerGameRepository/PokerGame/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/limits.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ D:/PokerGameRepository/PokerGame/mingw64/x86_64-w64-mingw32/include/malloc.h \
+ D:/PokerGameRepository/PokerGame/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
+ D:/PokerGameRepository/PokerGame/Include/common.h

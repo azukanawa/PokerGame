@@ -1,0 +1,5 @@
+D:/PokerGameRepository/PokerGame/build/CMakeFiles/edit_cache.dir
+D:/PokerGameRepository/PokerGame/build/CMakeFiles/rebuild_cache.dir
+D:/PokerGameRepository/PokerGame/build/Doc/CMakeFiles/PokerGame.dir
+D:/PokerGameRepository/PokerGame/build/Doc/CMakeFiles/edit_cache.dir
+D:/PokerGameRepository/PokerGame/build/Doc/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+D:\CMake\bin\cmake.exe -E rm -f CMakeFiles\PokerGame.dir/objects.a
+D:\MinGW64\bin\ar.exe qc CMakeFiles\PokerGame.dir/objects.a @CMakeFiles\PokerGame.dir\objects1.rsp
+D:\PokerGameRepository\PokerGame\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\PokerGame.dir/objects.a -Wl,--no-whole-archive -o PokerGame.exe -Wl,--out-implib,libPokerGame.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\PokerGame.dir\linkLibs.rsp

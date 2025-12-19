@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/PokerGameRepository/PokerGame/build/cmake_install.cmake",
+		"D:/PokerGameRepository/PokerGame/build/Doc/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
