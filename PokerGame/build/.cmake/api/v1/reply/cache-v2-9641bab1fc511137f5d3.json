@@ -563,7 +563,7 @@
 				}
 			],
 			"type" : "BOOL",
-			"value" : "OFF"
+			"value" : "TRUE"
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",

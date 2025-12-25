@@ -120,7 +120,7 @@ int who_wins(int** player_cards, int player_num,  // 判断输赢并找到赢家
       /*判断是否同花*/
       if (suits[index][CARDS_NUM - 1] == suits[index][0]) {
         /*是就是同花顺*/
-        /*用一个四位数来表示玩家特征，最高位是牌型，往下两位是核心牌的点数，个位是最大牌的花色*/
+        /*用一个四位数来表示玩家特征，最高位是牌型，往下两位是核心牌的点数，个位是最大关键牌的花色*/
         players_winning_status[index] =
             FLUSH * 1000 + player_cards[index][CARDS_NUM - 1];
         continue;
